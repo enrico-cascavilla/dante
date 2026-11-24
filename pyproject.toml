@@ -7,7 +7,10 @@ authors = [
     { name = "Enrico Cascavilla", email = "ilcasca@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pandas>=3.1.1",
+    "pyarrow>=26.0.1",
+]
 
 [project.scripts]
 dante-gen = "dante_gen:main"
@@ -19,4 +22,9 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = [
     "dvc>=3.67.1",
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "pip>=26.3",
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
 ]
